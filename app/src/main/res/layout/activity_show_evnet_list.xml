@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".showEvnetList">
+
+    <ListView
+        android:id="@+id/eventList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/showEventProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showEventProgressText"
+        android:layout_width="122dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text=" Searching Events..."
+        app:layout_constraintBottom_toTopOf="@+id/eventList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eventList" />
+
+    <TextView
+        android:id="@+id/noEventsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No results"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/showEventProgress"
+        app:layout_constraintEnd_toStartOf="@+id/showEventProgressText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/showEventProgress"
+        app:layout_constraintTop_toBottomOf="@+id/showEventProgress" />
+
+</android.support.constraint.ConstraintLayout>

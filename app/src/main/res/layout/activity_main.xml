@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_light"
+        app:tabTextColor="@android:color/white">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/searchTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/favoriteTab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="favorite" />
+    </android.support.design.widget.TabLayout>
+
+
+    <!--<fragment-->
+    <!--android:id="@+id/fragmentSpace"-->
+    <!--android:name="com.example.csci571hw9.favoriteFragement"-->
+    <!--android:layout_width="415dp"-->
+    <!--android:layout_height="643dp"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tabLayout" />-->
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/viewpager"-->
+    <!--android:layout_width="395dp"-->
+    <!--android:layout_height="690dp"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:visibility="invisible"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/tabLayout"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/tabLayout"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tabLayout">-->
+
+    <!--</android.support.v4.view.ViewPager>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<EditText-->
+    <!--android:id="@+id/otherInput"-->
+    <!--android:layout_width="349dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginStart="41dp"-->
+    <!--android:layout_marginLeft="41dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint=" Type in the Location"-->
+    <!--android:inputType="text"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/searchBtn"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/fromSelectionGroup" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/fromLabel"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:text="From"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/distanceUnit" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/distanceLabel"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:text="Distance"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="1.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/categoryInput" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/categoryLabel"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:text="Category"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/keywordInput" />-->
+
+    <!--<android.support.constraint.Guideline-->
+    <!--android:id="@+id/guideline2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintGuide_begin="16dp" />-->
+
+    <!--<android.support.constraint.Guideline-->
+    <!--android:id="@+id/guideline3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--app:layout_constraintGuide_end="16dp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/keywordLable"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:text="Keyword"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.11"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/keywordInput"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="Enter Keyword"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/autoCompleteKeyword"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/keywordLable" />-->
+
+    <!--<android.support.v7.widget.AutoCompleteTextView-->
+    <!--android:id="@+id/autoCompleteKeyword"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:maxLines="5"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/categoryInput"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/keywordInput" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/selected_item"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@id/autoCompleteKeyword"-->
+    <!--android:layout_marginTop="50dp"-->
+    <!--android:padding="20dp"/>-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/categoryInput"-->
+    <!--android:layout_width="380dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:entries="@array/category"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/categoryLabel" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/distanceInput"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="40dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:ems="10"-->
+    <!--android:hint="10"-->
+    <!--android:inputType="number"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/distanceLabel" />-->
+
+    <!--<Spinner-->
+    <!--android:id="@+id/distanceUnit"-->
+    <!--android:layout_width="380dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:entries="@array/unit"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/distanceInput" />-->
+
+    <!--<RadioGroup-->
+    <!--android:id="@+id/fromSelectionGroup"-->
+    <!--android:layout_width="379dp"-->
+    <!--android:layout_height="51dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:layout_marginLeft="16dp"-->
+    <!--android:layout_marginEnd="16dp"-->
+    <!--android:layout_marginRight="16dp"-->
+    <!--android:visibility="visible"-->
+    <!--app:layout_constraintBottom_toTopOf="@+id/otherInput"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/fromLabel">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/currentSelection"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="15dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Current location" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/otherSelection"-->
+    <!--android:layout_width="380dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:text="Other. Specify Location"-->
+    <!--tools:layout_editor_absoluteX="16dp"-->
+    <!--tools:layout_editor_absoluteY="253dp" />-->
+    <!--</RadioGroup>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/searchBtn"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Search"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/clearBtn"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintHorizontal_chainStyle="packed"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/otherInput" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/clearBtn"-->
+    <!--android:layout_width="190dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Clear"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.5"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/searchBtn"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/otherInput" />-->
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/artist"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="Artist/Team(s)"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/artistDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:visibility="visible">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/venue"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="Venue"-->
+    <!--android:textStyle="bold"-->
+    <!--android:visibility="visible"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/venueDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:visibility="visible"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/time"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="Time"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/timeDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/category"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="Category"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/categoryDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/priceRange"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="Price Range"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/priceRangeDetail"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/priceRangeDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/priceRange"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/ticketStatus"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="Ticket Status"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/ticketStatusDetail"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/ticketStatusDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/ticketStatus"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/buyTicketAt"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="But Ticket At"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/buyTicketAtDetail"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/buyTicketAtDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clickable="true"-->
+    <!--android:linksClickable="true"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/buyTicketAt"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <!--<android.support.constraint.ConstraintLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/seatMap"-->
+    <!--android:layout_width="146dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:paddingLeft="16dp"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--android:text="Seat Map"-->
+    <!--android:textStyle="bold"-->
+    <!--app:layout_constraintEnd_toStartOf="@+id/seatMapDetail"-->
+    <!--app:layout_constraintStart_toStartOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/seatMapDetail"-->
+    <!--android:layout_width="264dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clickable="true"-->
+    <!--android:linksClickable="true"-->
+    <!--android:paddingTop="5dp"-->
+    <!--android:paddingBottom="5dp"-->
+    <!--app:layout_constraintEnd_toEndOf="parent"-->
+    <!--app:layout_constraintStart_toEndOf="@+id/seatMap"-->
+    <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    <!--</android.support.constraint.ConstraintLayout>-->
+
+    <ScrollView
+        android:id="@+id/infoTabView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/artist"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Artist/Team(s)"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/artistDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/venue"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Venue"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/venueDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Time"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/timeDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Category"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/categoryDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/priceRange"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Price Range"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/priceRangeDetail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/priceRangeDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/priceRange"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/ticketStatus"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Ticket Status"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/ticketStatusDetail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ticketStatusDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ticketStatus"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/buyTicketAt"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="But Ticket At"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/buyTicketAtDetail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/buyTicketAtDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:linksClickable="true"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/buyTicketAt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/seatMap"
+                    android:layout_width="146dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Seat Map"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/seatMapDetail"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/seatMapDetail"
+                    android:layout_width="264dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:linksClickable="true"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/seatMap"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/infoTabProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/infoTabView"
+        app:layout_constraintEnd_toStartOf="@+id/infoTabProgressText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/infoTabView"
+        app:layout_constraintTop_toBottomOf="@+id/infoTabView" />
+
+    <TextView
+        android:id="@+id/infoTabProgressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Searching results ..."
+        app:layout_constraintBottom_toTopOf="@+id/infoTabView"
+        app:layout_constraintEnd_toStartOf="@+id/infoTabView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/infoTabProgress"
+        app:layout_constraintTop_toBottomOf="@+id/infoTabView" />
+</android.support.constraint.ConstraintLayout>
